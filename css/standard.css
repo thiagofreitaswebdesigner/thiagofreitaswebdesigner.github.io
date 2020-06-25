@@ -1,0 +1,78 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=MuseoModerno:wght@600&display=swap');
+/*HEADER*/
+#nav_main{
+	background-color: #343a40 !important
+}
+#nav_main li a{
+	font-family: 'MuseoModerno', cursive !important;
+	color: white !important;
+	border-bottom: 2px solid #343a40;
+	transition: .3s all
+}
+#nav_main li a:hover{
+	border-bottom-color: white
+	
+}
+@media only screen and (min-width: 993px){
+	#nav_main #nav_collapse_main{
+		flex-flow: row-reverse !important;
+	}
+}
+/*CONTENT*/
+/*->ALL*/
+body{
+	background-color: #343a40;
+}
+h1, h3, p{
+	color: white;
+	text-align: center;
+}
+label{
+	color: white
+}
+/*->INICIO*/
+#inicio{
+	text-align-last: center;
+	margin-top: 5em;
+	margin-bottom: 5em
+
+}
+#inicio h1{
+	font-size: 5em;
+}
+#inicio p{
+	font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+#inicio .btn{
+	font-size: 1.5em;
+}
+/*SERVICOS*/
+#servicos .card p{
+	color: black !important
+}
+#servicos .btn-orcamento{
+	text-align: center;
+}
+#servicos li{
+	list-style: none;
+}
+#servicos li:before {
+  content: ""; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+/*FOOTER*/
+#footer_main{
+	margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#footer_main span{
+	 color: white !important
+}

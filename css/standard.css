@@ -1,5 +1,5 @@
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=MuseoModerno:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=MuseoModerno:wght@600&display=swap&family=Ubuntu&display=swap');
 /*HEADER*/
 #nav_main{
 	background-color: #343a40 !important
@@ -20,9 +20,16 @@
 	}
 }
 /*CONTENT*/
+.sections_main{
+	margin-bottom: 10em;
+}
 /*->ALL*/
 body{
 	background-color: #343a40;
+}
+h1{
+	font-family: 'Ubuntu', sans-serif;
+	margin-bottom: 1em;
 }
 h1, h3, p{
 	color: white;
@@ -35,7 +42,6 @@ label{
 #inicio{
 	text-align-last: center;
 	margin-top: 5em;
-	margin-bottom: 5em
 
 }
 #inicio h1{
@@ -50,6 +56,15 @@ label{
 	font-size: 1.5em;
 }
 /*SERVICOS*/
+@media only screen and (max-width: 992px){
+	#servicos .col-sm-12{
+		margin-bottom: 1em;
+	}
+}
+#servicos .card-title{
+	font-family: 'Ubuntu', sans-serif;
+	border-bottom: 1px solid #343a40;
+}
 #servicos .card p{
 	color: black !important
 }

@@ -10,6 +10,9 @@
 	border-bottom: 2px solid #343a40;
 	transition: .3s all
 }
+#nav_main .navbar-brand img{
+	margin-top: -0.3em;
+}
 #nav_main li a:hover{
 	border-bottom-color: white
 	
@@ -21,11 +24,12 @@
 }
 /*CONTENT*/
 .sections_main{
-	margin-bottom: 10em;
+	padding-top: 5em;
+	padding-bottom: 10em;
 }
 /*->ALL*/
 body{
-	background-color: #343a40;
+	background-color: #343a40 !important
 }
 h1{
 	font-family: 'Ubuntu', sans-serif;
@@ -41,7 +45,11 @@ label{
 /*->INICIO*/
 #inicio{
 	text-align-last: center;
-	margin-top: 5em;
+	background: url("../imgs/space.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 
 }
 #inicio h1{
@@ -54,16 +62,39 @@ label{
 }
 #inicio .btn{
 	font-size: 1.5em;
+	border: 2px solid #13011c;
+	color: white;
+	background-color: rgba(255, 193, 7, 0.8) !important
 }
 /*SERVICOS*/
+#servicos{
+	background-color: #f0f0f0
+}
 @media only screen and (max-width: 992px){
 	#servicos .col-sm-12{
 		margin-bottom: 1em;
 	}
 }
+#servicos h1{
+	color: black
+}
 #servicos .card-title{
 	font-family: 'Ubuntu', sans-serif;
-	border-bottom: 1px solid #343a40;
+	font-size: 1em;
+	text-align: center;
+}
+#servicos_card_bronze .card-header{
+	background-color: #d46610bf;
+}
+#servicos_card_prata .card-header{
+	background-color: #b9b4b4e0;
+}
+#servicos_card_ouro .card-header{
+	background-color: #ffc107;
+}
+#servicos .card-header{
+    color: white;
+    font-size: 1.3em;
 }
 #servicos .card p{
 	color: black !important
@@ -75,18 +106,18 @@ label{
 	list-style: none;
 }
 #servicos li:before {
-  content: ""; /* FontAwesome Unicode */
+  content: ""; /* FontAwesome Unicode */
   font-family: FontAwesome;
   display: inline-block;
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 1.3em; /* same as padding-left set on li */
 }
-
 /*FOOTER*/
 #footer_main{
 	margin-top: 1em;
     margin-bottom: 1em;
     text-align: center;
+
 }
 #footer_main span{
 	 color: white !important
